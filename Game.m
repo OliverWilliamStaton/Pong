@@ -14,6 +14,40 @@
 
 @implementation Game
 
+-(IBAction)StartButton:(id)sender
+{
+    // Generate a number between 0 and 11
+    Y = arc4random() %11;
+    X = arc4random() %11;
+
+    // Display something between -5 and +5
+    Y = Y - 5;
+    X = X - 5;
+    
+    // Ensure that X and Y are non-zero values
+    if(Y == 0)
+    {
+        Y = 1;
+    }
+    if(X == 0)
+    {
+        X = 1;
+    }
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:0x01 target:(self) selector:@selector(BallMovement) userInfo:nil repeats:YES];
+}
+
+-(void)BallMovement
+{
+    Ball.center = CGPointMake(Ball.center.x + X, Ball.center.y + Y);
+    
+    if((Ball.center.x < 15) ||
+       (Ball.center.x > 305))
+    {
+        X = 0 - X;
+    }
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

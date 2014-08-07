@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+int Y;
+int X;
+
 @interface Game : UIViewController
+{
+    IBOutlet UIImageView *Ball;
+    IBOutlet UIButton *StartButton;
+    
+    NSTimer *timer;
+}
+
+-(IBAction)StartButton:(id)sender;
+-(void)BallMovement;
 
 @end
