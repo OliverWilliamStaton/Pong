@@ -22,6 +22,15 @@
 		07FCC88D1993225B00EEF51F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FCC86C1993225B00EEF51F /* UIKit.framework */; };
 		07FCC8951993225B00EEF51F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8931993225B00EEF51F /* InfoPlist.strings */; };
 		07FCC8971993225B00EEF51F /* PongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FCC8961993225B00EEF51F /* PongTests.m */; };
+		07FCC8A81993227400EEF51F /* Paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A01993227400EEF51F /* Paddle.png */; };
+		07FCC8A91993227400EEF51F /* Desktop4.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A11993227400EEF51F /* Desktop4.png */; };
+		07FCC8AA1993227400EEF51F /* Desktop1.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A21993227400EEF51F /* Desktop1.png */; };
+		07FCC8AB1993227400EEF51F /* Desktop2.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A31993227400EEF51F /* Desktop2.png */; };
+		07FCC8AC1993227400EEF51F /* Desktop5.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A41993227400EEF51F /* Desktop5.png */; };
+		07FCC8AD1993227400EEF51F /* Desktop3.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A51993227400EEF51F /* Desktop3.png */; };
+		07FCC8AE1993227400EEF51F /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A61993227400EEF51F /* Ball.png */; };
+		07FCC8AF1993227400EEF51F /* GameBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A71993227400EEF51F /* GameBackGround.png */; };
+		07FCC8B2199324EA00EEF51F /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FCC8B1199324EA00EEF51F /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +64,16 @@
 		07FCC8921993225B00EEF51F /* PongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PongTests-Info.plist"; sourceTree = "<group>"; };
 		07FCC8941993225B00EEF51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07FCC8961993225B00EEF51F /* PongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PongTests.m; sourceTree = "<group>"; };
+		07FCC8A01993227400EEF51F /* Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Paddle.png; path = ../../../Paddle.png; sourceTree = "<group>"; };
+		07FCC8A11993227400EEF51F /* Desktop4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop4.png; path = ../../../Desktop4.png; sourceTree = "<group>"; };
+		07FCC8A21993227400EEF51F /* Desktop1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop1.png; path = ../../../Desktop1.png; sourceTree = "<group>"; };
+		07FCC8A31993227400EEF51F /* Desktop2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop2.png; path = ../../../Desktop2.png; sourceTree = "<group>"; };
+		07FCC8A41993227400EEF51F /* Desktop5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop5.png; path = ../../../Desktop5.png; sourceTree = "<group>"; };
+		07FCC8A51993227400EEF51F /* Desktop3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop3.png; path = ../../../Desktop3.png; sourceTree = "<group>"; };
+		07FCC8A61993227400EEF51F /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ball.png; path = ../../../Ball.png; sourceTree = "<group>"; };
+		07FCC8A71993227400EEF51F /* GameBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GameBackGround.png; path = ../../../GameBackGround.png; sourceTree = "<group>"; };
+		07FCC8B0199324EA00EEF51F /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
+		07FCC8B1199324EA00EEF51F /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +139,8 @@
 				07FCC87D1993225B00EEF51F /* Main_iPad.storyboard */,
 				07FCC8801993225B00EEF51F /* ViewController.h */,
 				07FCC8811993225B00EEF51F /* ViewController.m */,
+				07FCC8B0199324EA00EEF51F /* Game.h */,
+				07FCC8B1199324EA00EEF51F /* Game.m */,
 				07FCC8831993225B00EEF51F /* Images.xcassets */,
 				07FCC86F1993225B00EEF51F /* Supporting Files */,
 			);
@@ -129,6 +150,14 @@
 		07FCC86F1993225B00EEF51F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				07FCC8A01993227400EEF51F /* Paddle.png */,
+				07FCC8A11993227400EEF51F /* Desktop4.png */,
+				07FCC8A21993227400EEF51F /* Desktop1.png */,
+				07FCC8A31993227400EEF51F /* Desktop2.png */,
+				07FCC8A41993227400EEF51F /* Desktop5.png */,
+				07FCC8A51993227400EEF51F /* Desktop3.png */,
+				07FCC8A61993227400EEF51F /* Ball.png */,
+				07FCC8A71993227400EEF51F /* GameBackGround.png */,
 				07FCC8701993225B00EEF51F /* Pong-Info.plist */,
 				07FCC8711993225B00EEF51F /* InfoPlist.strings */,
 				07FCC8741993225B00EEF51F /* main.m */,
@@ -232,9 +261,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FCC87F1993225B00EEF51F /* Main_iPad.storyboard in Resources */,
+				07FCC8A91993227400EEF51F /* Desktop4.png in Resources */,
+				07FCC8AD1993227400EEF51F /* Desktop3.png in Resources */,
 				07FCC8841993225B00EEF51F /* Images.xcassets in Resources */,
+				07FCC8AE1993227400EEF51F /* Ball.png in Resources */,
+				07FCC8AB1993227400EEF51F /* Desktop2.png in Resources */,
+				07FCC8AC1993227400EEF51F /* Desktop5.png in Resources */,
 				07FCC87C1993225B00EEF51F /* Main_iPhone.storyboard in Resources */,
+				07FCC8AA1993227400EEF51F /* Desktop1.png in Resources */,
 				07FCC8731993225B00EEF51F /* InfoPlist.strings in Resources */,
+				07FCC8A81993227400EEF51F /* Paddle.png in Resources */,
+				07FCC8AF1993227400EEF51F /* GameBackGround.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +293,7 @@
 				07FCC8821993225B00EEF51F /* ViewController.m in Sources */,
 				07FCC8791993225B00EEF51F /* AppDelegate.m in Sources */,
 				07FCC8751993225B00EEF51F /* main.m in Sources */,
+				07FCC8B2199324EA00EEF51F /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +432,7 @@
 				GCC_PREFIX_HEADER = "Pong/Pong-Prefix.pch";
 				INFOPLIST_FILE = "Pong/Pong-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,6 +446,7 @@
 				GCC_PREFIX_HEADER = "Pong/Pong-Prefix.pch";
 				INFOPLIST_FILE = "Pong/Pong-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

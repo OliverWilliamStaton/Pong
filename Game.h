@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Game.h
 //  Pong
 //
 //  Created by Oliver Staton on 8/6/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-{
-    IBOutlet UIImageView *AnimatedBackground;
-}
+@interface Game : UIViewController
+
 @end
