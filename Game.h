@@ -15,11 +15,14 @@ int X;
 {
     IBOutlet UIImageView *Ball;
     IBOutlet UIButton *StartButton;
+    IBOutlet UIImageView *Player;
+    IBOutlet UIImageView *Computer;
     
     NSTimer *timer;
 }
 
 -(IBAction)StartButton:(id)sender;
 -(void)BallMovement;
+-(void)ComputerMovement;
 
 @end

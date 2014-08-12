@@ -14,6 +14,58 @@
 
 @implementation Game
 
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    // Have the player image follow the mouse location
+    UITouch *Drag = [[event allTouches] anyObject];
+    Player.center = [Drag locationInView:self.view];
+
+    // Lock the player image into y-axis 525
+    if((Player.center.y > 525) || (Player.center.y < 525))
+    {
+        Player.center = CGPointMake(Player.center.x, 525);
+    }
+    
+    // Prevent the player from passing the left edge
+    if(Player.center.x < 0)
+    {
+        Player.center = CGPointMake(0, Player.center.y);
+    }
+    
+    // Prevent the player from passing the right edge
+    if(Player.center.x > 320)
+    {
+        Player.center = CGPointMake(320, Player.center.y);
+    }
+}
+
+-(void)ComputerMovement
+{
+    // Move the computer left when the ball moves left
+    if(Computer.center.x > Ball.center.x)
+    {
+        Computer.center = CGPointMake(Computer.center.x - 2, Computer.center.y);
+    }
+    
+    // Move the computer right when the ball moves right
+    if(Computer.center.x < Ball.center.x)
+    {
+        Computer.center = CGPointMake(Computer.center.x + 2, Computer.center.y);
+    }
+    
+    // Prevent the computer from passing the left edge
+    if(Computer.center.x < 0)
+    {
+        Computer.center = CGPointMake(0, Computer.center.y);
+    }
+    
+    // Prevent the computer from passing the right edge
+    if(Computer.center.x > 320)
+    {
+        Computer.center = CGPointMake(246, Computer.center.y);
+    }
+}
+
 -(IBAction)StartButton:(id)sender
 {
     // Generate a number between 0 and 11
@@ -34,11 +86,13 @@
         X = 1;
     }
     
-    timer = [NSTimer scheduledTimerWithTimeInterval:0x01 target:(self) selector:@selector(BallMovement) userInfo:nil repeats:YES];
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:(self) selector:@selector(BallMovement) userInfo:nil repeats:YES];
 }
 
 -(void)BallMovement
 {
+    [self ComputerMovement];
+    
     Ball.center = CGPointMake(Ball.center.x + X, Ball.center.y + Y);
     
     if((Ball.center.x < 15) ||
