@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0719E5B41999C47900001408 /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 0719E5AC1999C47900001408 /* Ball.png */; };
+		0719E5B51999C47900001408 /* Desktop1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0719E5AD1999C47900001408 /* Desktop1.png */; };
+		0719E5B61999C47900001408 /* Desktop2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0719E5AE1999C47900001408 /* Desktop2.png */; };
+		0719E5B71999C47900001408 /* Desktop3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0719E5AF1999C47900001408 /* Desktop3.png */; };
+		0719E5B81999C47900001408 /* Desktop4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0719E5B01999C47900001408 /* Desktop4.png */; };
+		0719E5B91999C47900001408 /* Desktop5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0719E5B11999C47900001408 /* Desktop5.png */; };
+		0719E5BA1999C47900001408 /* GameBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 0719E5B21999C47900001408 /* GameBackGround.png */; };
+		0719E5BB1999C47900001408 /* Paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0719E5B31999C47900001408 /* Paddle.png */; };
 		07FCC8691993225B00EEF51F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FCC8681993225B00EEF51F /* Foundation.framework */; };
 		07FCC86B1993225B00EEF51F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FCC86A1993225B00EEF51F /* CoreGraphics.framework */; };
 		07FCC86D1993225B00EEF51F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FCC86C1993225B00EEF51F /* UIKit.framework */; };
@@ -22,14 +30,6 @@
 		07FCC88D1993225B00EEF51F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FCC86C1993225B00EEF51F /* UIKit.framework */; };
 		07FCC8951993225B00EEF51F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8931993225B00EEF51F /* InfoPlist.strings */; };
 		07FCC8971993225B00EEF51F /* PongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FCC8961993225B00EEF51F /* PongTests.m */; };
-		07FCC8A81993227400EEF51F /* Paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A01993227400EEF51F /* Paddle.png */; };
-		07FCC8A91993227400EEF51F /* Desktop4.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A11993227400EEF51F /* Desktop4.png */; };
-		07FCC8AA1993227400EEF51F /* Desktop1.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A21993227400EEF51F /* Desktop1.png */; };
-		07FCC8AB1993227400EEF51F /* Desktop2.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A31993227400EEF51F /* Desktop2.png */; };
-		07FCC8AC1993227400EEF51F /* Desktop5.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A41993227400EEF51F /* Desktop5.png */; };
-		07FCC8AD1993227400EEF51F /* Desktop3.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A51993227400EEF51F /* Desktop3.png */; };
-		07FCC8AE1993227400EEF51F /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A61993227400EEF51F /* Ball.png */; };
-		07FCC8AF1993227400EEF51F /* GameBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FCC8A71993227400EEF51F /* GameBackGround.png */; };
 		07FCC8B2199324EA00EEF51F /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FCC8B1199324EA00EEF51F /* Game.m */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0719E5AC1999C47900001408 /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ball.png; path = Images/Ball.png; sourceTree = "<group>"; };
+		0719E5AD1999C47900001408 /* Desktop1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop1.png; path = Images/Desktop1.png; sourceTree = "<group>"; };
+		0719E5AE1999C47900001408 /* Desktop2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop2.png; path = Images/Desktop2.png; sourceTree = "<group>"; };
+		0719E5AF1999C47900001408 /* Desktop3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop3.png; path = Images/Desktop3.png; sourceTree = "<group>"; };
+		0719E5B01999C47900001408 /* Desktop4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop4.png; path = Images/Desktop4.png; sourceTree = "<group>"; };
+		0719E5B11999C47900001408 /* Desktop5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop5.png; path = Images/Desktop5.png; sourceTree = "<group>"; };
+		0719E5B21999C47900001408 /* GameBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GameBackGround.png; path = Images/GameBackGround.png; sourceTree = "<group>"; };
+		0719E5B31999C47900001408 /* Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Paddle.png; path = Images/Paddle.png; sourceTree = "<group>"; };
 		07FCC8651993225B00EEF51F /* Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FCC8681993225B00EEF51F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07FCC86A1993225B00EEF51F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,14 +72,6 @@
 		07FCC8921993225B00EEF51F /* PongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PongTests-Info.plist"; sourceTree = "<group>"; };
 		07FCC8941993225B00EEF51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07FCC8961993225B00EEF51F /* PongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PongTests.m; sourceTree = "<group>"; };
-		07FCC8A01993227400EEF51F /* Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Paddle.png; path = ../../../Paddle.png; sourceTree = "<group>"; };
-		07FCC8A11993227400EEF51F /* Desktop4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop4.png; path = ../../../Desktop4.png; sourceTree = "<group>"; };
-		07FCC8A21993227400EEF51F /* Desktop1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop1.png; path = ../../../Desktop1.png; sourceTree = "<group>"; };
-		07FCC8A31993227400EEF51F /* Desktop2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop2.png; path = ../../../Desktop2.png; sourceTree = "<group>"; };
-		07FCC8A41993227400EEF51F /* Desktop5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop5.png; path = ../../../Desktop5.png; sourceTree = "<group>"; };
-		07FCC8A51993227400EEF51F /* Desktop3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Desktop3.png; path = ../../../Desktop3.png; sourceTree = "<group>"; };
-		07FCC8A61993227400EEF51F /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ball.png; path = ../../../Ball.png; sourceTree = "<group>"; };
-		07FCC8A71993227400EEF51F /* GameBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GameBackGround.png; path = ../../../GameBackGround.png; sourceTree = "<group>"; };
 		07FCC8B0199324EA00EEF51F /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
 		07FCC8B1199324EA00EEF51F /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,14 +150,14 @@
 		07FCC86F1993225B00EEF51F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				07FCC8A01993227400EEF51F /* Paddle.png */,
-				07FCC8A11993227400EEF51F /* Desktop4.png */,
-				07FCC8A21993227400EEF51F /* Desktop1.png */,
-				07FCC8A31993227400EEF51F /* Desktop2.png */,
-				07FCC8A41993227400EEF51F /* Desktop5.png */,
-				07FCC8A51993227400EEF51F /* Desktop3.png */,
-				07FCC8A61993227400EEF51F /* Ball.png */,
-				07FCC8A71993227400EEF51F /* GameBackGround.png */,
+				0719E5AC1999C47900001408 /* Ball.png */,
+				0719E5AD1999C47900001408 /* Desktop1.png */,
+				0719E5AE1999C47900001408 /* Desktop2.png */,
+				0719E5AF1999C47900001408 /* Desktop3.png */,
+				0719E5B01999C47900001408 /* Desktop4.png */,
+				0719E5B11999C47900001408 /* Desktop5.png */,
+				0719E5B21999C47900001408 /* GameBackGround.png */,
+				0719E5B31999C47900001408 /* Paddle.png */,
 				07FCC8701993225B00EEF51F /* Pong-Info.plist */,
 				07FCC8711993225B00EEF51F /* InfoPlist.strings */,
 				07FCC8741993225B00EEF51F /* main.m */,
@@ -260,18 +260,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0719E5B41999C47900001408 /* Ball.png in Resources */,
 				07FCC87F1993225B00EEF51F /* Main_iPad.storyboard in Resources */,
-				07FCC8A91993227400EEF51F /* Desktop4.png in Resources */,
-				07FCC8AD1993227400EEF51F /* Desktop3.png in Resources */,
+				0719E5B91999C47900001408 /* Desktop5.png in Resources */,
+				0719E5B51999C47900001408 /* Desktop1.png in Resources */,
+				0719E5BA1999C47900001408 /* GameBackGround.png in Resources */,
+				0719E5B61999C47900001408 /* Desktop2.png in Resources */,
 				07FCC8841993225B00EEF51F /* Images.xcassets in Resources */,
-				07FCC8AE1993227400EEF51F /* Ball.png in Resources */,
-				07FCC8AB1993227400EEF51F /* Desktop2.png in Resources */,
-				07FCC8AC1993227400EEF51F /* Desktop5.png in Resources */,
 				07FCC87C1993225B00EEF51F /* Main_iPhone.storyboard in Resources */,
-				07FCC8AA1993227400EEF51F /* Desktop1.png in Resources */,
+				0719E5B81999C47900001408 /* Desktop4.png in Resources */,
+				0719E5B71999C47900001408 /* Desktop3.png in Resources */,
 				07FCC8731993225B00EEF51F /* InfoPlist.strings in Resources */,
-				07FCC8A81993227400EEF51F /* Paddle.png in Resources */,
-				07FCC8AF1993227400EEF51F /* GameBackGround.png in Resources */,
+				0719E5BB1999C47900001408 /* Paddle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +510,7 @@
 				07FCC89C1993225B00EEF51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07FCC89D1993225B00EEF51F /* Build configuration list for PBXNativeTarget "PongTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +519,7 @@
 				07FCC89F1993225B00EEF51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
