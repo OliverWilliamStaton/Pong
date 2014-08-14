@@ -14,6 +14,22 @@
 
 @implementation Game
 
+-(void)Collision
+{
+    // If the ball hits the player, make the ball go down!
+    if(CGRectIntersectsRect(Ball.frame, Player.frame))
+    {
+        Y = arc4random() %5;
+        Y = 0 - Y;
+    }
+    
+    // If the ball hits the computer, make the ball go up!
+    if(CGRectIntersectsRect(Ball.frame, Computer.frame))
+    {
+        Y = arc4random() %5;
+    }
+}
+
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     // Have the player image follow the mouse location
@@ -68,6 +84,12 @@
 
 -(IBAction)StartButton:(id)sender
 {
+    // Hide the buttons when pressed
+    StartButton.hidden = YES;
+    Exit.hidden = YES;
+    Quit.hidden = YES;
+    WinOrLose.hidden = YES;
+    
     // Generate a number between 0 and 11
     Y = arc4random() %11;
     X = arc4random() %11;
@@ -91,7 +113,11 @@
 
 -(void)BallMovement
 {
+    // Run the computer movement with the ball
     [self ComputerMovement];
+    
+    // Run the collision sequence with the ball
+    [self Collision];
     
     Ball.center = CGPointMake(Ball.center.x + X, Ball.center.y + Y);
     
@@ -99,6 +125,62 @@
        (Ball.center.x > 305))
     {
         X = 0 - X;
+    }
+    
+    if(Ball.center.y < 0)
+    {
+        // Display the new player score
+        PlayerScoreNumber++;
+        PlayerScore.text = [NSString stringWithFormat:@"%i", PlayerScoreNumber];
+        
+        // Stop the ball and show the start button
+        [timer invalidate];
+        StartButton.hidden = NO;
+        
+        // Place the ball and computer paddle back to initial position
+        Ball.center = CGPointMake(145, 257);
+        Computer.center = CGPointMake(160, 32);
+        
+        // Display player's victory when 10 is reached, otherwise give the option to quit
+        if(PlayerScoreNumber == 10)
+        {
+            StartButton.hidden = YES;
+            Exit.hidden = NO;
+            WinOrLose.hidden = NO;
+            WinOrLose.text = [NSString stringWithFormat:@"You Win!"];
+        }
+        else
+        {
+            Quit.hidden = NO;
+        }
+    }
+    
+    if(Ball.center.y > 570)
+    {
+        // Display the new computer score
+        ComputerScoreNumber++;
+        ComputerScore.text = [NSString stringWithFormat:@"%i", ComputerScoreNumber];
+        
+        // Stop the ball and show the start button
+        [timer invalidate];
+        StartButton.hidden = NO;
+        
+        // Place the ball and computer paddle back to initial position
+        Ball.center = CGPointMake(160, 272);
+        Computer.center = CGPointMake(160, 32);
+
+        // Display computer's victory when 10 is reached
+        if(ComputerScoreNumber == 10)
+        {
+            StartButton.hidden = YES;
+            Exit.hidden = NO;
+            WinOrLose.hidden = NO;
+            WinOrLose.text = [NSString stringWithFormat:@"You Lose!"];
+        }
+        else
+        {
+            Quit.hidden = NO;
+        }
     }
 }
 
@@ -113,8 +195,15 @@
 
 - (void)viewDidLoad
 {
+    // Set the initial button status
+    Exit.hidden = YES;
+    Quit.hidden = NO;
+    
+    // Initialize score numbers
+    PlayerScoreNumber = 0;
+    ComputerScoreNumber = 0;
+
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
